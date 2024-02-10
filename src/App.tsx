@@ -1,7 +1,12 @@
 import AppLayout from 'src/components/AppLayout';
+import AppProviders from './components/AppProviders';
 
 function App() {
-  return <AppLayout>App Layout</AppLayout>;
+  return (
+    <AppProviders>
+      <AppLayout>App Layout</AppLayout>
+    </AppProviders>
+  );
 }
 
 export default App;

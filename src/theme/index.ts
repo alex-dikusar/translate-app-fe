@@ -1,7 +1,8 @@
 import { createTheme } from '@mui/material/styles';
-import { palette } from './palette';
+import { baseTheme } from './baseTheme';
+import { components } from './components';
 
 export default createTheme({
-  palette,
-  spacing: (factor: number) => `${factor}rem`,
+  ...baseTheme,
+  components,
 });
