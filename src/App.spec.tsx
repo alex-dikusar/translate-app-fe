@@ -4,5 +4,5 @@ import App from './App';
 test('renders learn react link', () => {
   render(<App />);
 
-  expect(screen.getByText('App Layout')).toBeInTheDocument();
+  expect(screen.getByText('Search')).toBeInTheDocument();
 });

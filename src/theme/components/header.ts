@@ -8,7 +8,7 @@ export default {
   MuiToolbar: {
     styleOverrides: {
       root: {
-        justifyContent: 'space-between',
+        justifyContent: 'center',
       },
     },
   },

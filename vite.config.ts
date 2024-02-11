@@ -4,6 +4,7 @@ import paths from 'vite-tsconfig-paths';
 import checker from 'vite-plugin-checker';
 
 export default defineConfig({
+  envPrefix: 'APP_',
   plugins: [
     react(),
     paths(),
