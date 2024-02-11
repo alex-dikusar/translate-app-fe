@@ -4,7 +4,7 @@ import AppProviders from './components/AppProviders';
 function App() {
   return (
     <AppProviders>
-      <AppLayout>App Layout</AppLayout>
+      <AppLayout />
     </AppProviders>
   );
 }

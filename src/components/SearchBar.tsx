@@ -24,6 +24,8 @@ function DataTableSearchBar({
 
   return (
     <TextField
+      fullWidth
+      type="search"
       variant="outlined"
       defaultValue={value}
       placeholder={placeholder}

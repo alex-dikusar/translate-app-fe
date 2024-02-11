@@ -4,10 +4,5 @@ export default {
       size: 'small',
       variant: 'outlined',
     },
-    styleOverrides: {
-      root: {
-        width: '30%',
-      },
-    },
   },
 };

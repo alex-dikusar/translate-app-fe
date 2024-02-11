@@ -1,17 +1,19 @@
-import { useState } from 'react';
+import { useContext } from 'react';
 import AppBar from '@mui/material/AppBar';
+import Container from '@mui/material/Container';
 import Toolbar from '@mui/material/Toolbar';
 import SearchBar from './SearchBar';
-import { useGetSearchResultQuery } from '../api';
+import { SearchContext } from './SearchContext';
 
 function Header() {
-  const [searchStr, setSearchStr] = useState<string>();
-  useGetSearchResultQuery(searchStr, { skip: !searchStr });
+  const { setSearchStr } = useContext(SearchContext);
 
   return (
     <AppBar>
       <Toolbar>
-        <SearchBar onChange={setSearchStr} />
+        <Container>
+          <SearchBar onChange={setSearchStr} />
+        </Container>
       </Toolbar>
     </AppBar>
   );
