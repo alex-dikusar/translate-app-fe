@@ -5,7 +5,7 @@ import SearchResult from './SearchResult';
 
 function AppLayout() {
   return (
-    <Stack height="100%">
+    <Stack data-testid="app-layout" height="100%">
       <Header />
       <Container>
         <SearchResult />

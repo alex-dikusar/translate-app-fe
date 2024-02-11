@@ -5,7 +5,8 @@ const { spacing, typography } = baseTheme;
 export default {
   MuiDialog: {
     defaultProps: {
-      maxWidth: 'lg',
+      maxWidth: 'sm',
+      fullWidth: true,
     },
     styleOverrides: {
       paper: {
